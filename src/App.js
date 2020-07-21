@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import { TabsLayout } from './components'
+import { TabsLayout, Breadcrumb } from './components'
 import Routes, { tabsConfig } from './routes'
 
 function App() {
@@ -15,10 +15,11 @@ function App() {
     <div className="App">
       <Router>
         <TabsLayout tabs={tabsConfig} />
+        <Breadcrumb />
         <Switch>
-          {Routes.map((route, i) => (
-              <Route key={`r-${route.path}-${i}`} path={route.path} component={route.component} />
-            ))}
+          {Object.entries(Routes).map(([path, options], i) => (
+            <Route key={`r-${path}-${i}`} path={path} component={options.component} />
+          ))}
         </Switch>
       </Router>
     </div>
