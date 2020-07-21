@@ -1,0 +1,11 @@
+.rightTabs {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 48px;
+}
+.rightTabs .icon {
+  cursor: pointer;
+}
+.rightTabs .carIcon{
+  margin: 0 45px;
+}
