@@ -1,6 +1,12 @@
+.sideMenu{
+  width: fit-content;
+}
 .colorsContainer {
   display: flex;
 }
 .colorsContainer .colorItem{
   margin-right: 10px;
+}
+.colorsContainer .colorActive{
+  border: 1px black solid;
 }

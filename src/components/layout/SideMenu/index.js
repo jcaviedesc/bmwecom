@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu, Slider } from 'antd';
+import { Menu, Slider, Col, Row, Input } from 'antd';
 
 import styles from './styles.module.css'
 
@@ -7,12 +7,12 @@ const { SubMenu } = Menu;
 
 const colors = ['#333333', '#F2994A', '#EB5757', '#27AE60', '#2F80ED', '#56CCF2', '#C4C4C4']
 
-const SideMenu = () => {
+const SideMenu = ({ filters, updateFilter }) => {
   const handleClick = e => {
     console.log('click ', e);
   };
   return (
-    <div>
+    <div className={styles.sideMenu}>
       <h1>Lifestyle</h1>
       <Menu
         onClick={handleClick}
@@ -77,15 +77,18 @@ const SideMenu = () => {
         />
         <Menu.Item key="color1">
           <div className={styles.colorsContainer}>
-            {colors.map((color, i) => (
+            {colors.map(color => (
               <div
                 key={color}
+                role="button"
+                onClick={()=> updateFilter({colors: color})}
                 style={{
                   backgroundColor: color,
                   width: '20px',
                   height: '20px',
                   marginRight: '10px'
                 }}
+                className={filters.colors === color ? styles.colorActive: ''}
               />))}
           </div>
         </Menu.Item>
@@ -103,9 +106,18 @@ const SideMenu = () => {
             max={5000000}
             range
             tooltipVisible={false}
-            defaultValue={[20, 50]} />
+            onChange={updateFilter}
+            defaultValue={[20, 1000000]} />
         </Menu.Item>
         <Menu.Item key="inputprecio">
+          <Row>
+            <Col span={12}>
+              <Input />
+            </Col>
+            <Col span={12}>
+              <Input />
+            </Col>
+          </Row>
         </Menu.Item>
       </Menu>
     </div>

@@ -1,10 +1,10 @@
 import React from 'react'
-import { SideMenu } from '../../components'
+import LifeStyleFiltersContainer from '../../containers/Lifestyles/filters.container'
 
 const LifeStylePage = () => {
   return (
     <div>
-      <SideMenu />
+      <LifeStyleFiltersContainer />
     </div>
   )
 }
