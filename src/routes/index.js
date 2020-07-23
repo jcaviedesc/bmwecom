@@ -1,7 +1,8 @@
 import React from 'react'
 import LifeStylePage from '../pages/Lifestyle'
 
-const DevelopPage = () => <div><label>in development</label></div>
+const DevelopPage = () => <div><h1>in development</h1></div>
+
 export const tabsConfig = {
   'Accesorios para carros': {
     ref: '/accesorios-para-carros'
@@ -33,5 +34,9 @@ export default {
   '/novedades': {
     component: DevelopPage,
     breadcrumbName: 'Novedades'
+  },
+  '/':{
+    component: DevelopPage,
+    breadcrumbName: 'Accesorios para carros'
   }
 }

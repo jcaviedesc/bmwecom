@@ -1,9 +1,10 @@
 import React from 'react'
+import { SideMenu } from '../../components'
 
 const LifeStylePage = () => {
   return (
     <div>
-      <h1>hola lifestyle</h1>
+      <SideMenu />
     </div>
   )
 }

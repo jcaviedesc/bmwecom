@@ -1,0 +1,6 @@
+.colorsContainer {
+  display: flex;
+}
+.colorsContainer .colorItem{
+  margin-right: 10px;
+}

@@ -10,9 +10,11 @@ export const Breadcrumb = () => {
   return (
     <BreadcrumbComponent>
       <BreadcrumbComponent.Item>Home</BreadcrumbComponent.Item>
-      <BreadcrumbComponent.Item>
-        {Routes[location.pathname].breadcrumbName}
-      </BreadcrumbComponent.Item>
+      {location && location.pathname !== undefined && (
+        <BreadcrumbComponent.Item>
+          {Routes[location.pathname].breadcrumbName}
+        </BreadcrumbComponent.Item>
+      )}
     </BreadcrumbComponent>
   )
 }

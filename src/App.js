@@ -13,7 +13,7 @@ import Routes, { tabsConfig } from './routes'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <TabsLayout tabs={tabsConfig} />
         <Breadcrumb />
         <Switch>
