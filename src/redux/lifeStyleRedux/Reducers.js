@@ -11,7 +11,11 @@ export const INITIAL_STATE_LIFESTYLES = {
     collectibles: '',
     colors: '',
     minPrice: 0,
-    maxPrice: 5000000
+    maxPrice: 5000000,
+    sortBy: {
+      value: 'newer',
+      label: 'Más Nuevo'
+    }
   },
   pagination: {
     page: 1

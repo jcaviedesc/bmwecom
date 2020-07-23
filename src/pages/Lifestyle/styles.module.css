@@ -1,0 +1,6 @@
+.lifestyle{
+    display: flex;
+}
+.lifestyle .lifestyleBody{
+    margin: 20px 36px;
+}
