@@ -1,0 +1,604 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "producto 1",
+            "categoria": "xxx",
+            "price": 1993001
+        },
+        {
+            "id": 2,
+            "name": "producto 2",
+            "categoria": "aaa",
+            "price": 1993002
+        },
+        {
+            "id": 3,
+            "name": "producto 3",
+            "categoria": "aaa",
+            "price": 1993003
+        },
+        {
+            "id": 4,
+            "name": "producto 4",
+            "categoria": "xxx",
+            "price": 1993004
+        },
+        {
+            "id": 5,
+            "name": "producto 5",
+            "categoria": "xxx",
+            "price": 1993005
+        },
+        {
+            "id": 6,
+            "name": "producto 6",
+            "categoria": "xxx",
+            "price": 1993006
+        },
+        {
+            "id": 7,
+            "name": "producto 7",
+            "categoria": "aaa",
+            "price": 1993007
+        },
+        {
+            "id": 8,
+            "name": "producto 8",
+            "categoria": "aaa",
+            "price": 1993008
+        },
+        {
+            "id": 9,
+            "name": "producto 9",
+            "categoria": "aaa",
+            "price": 1993009
+        },
+        {
+            "id": 10,
+            "name": "producto 10",
+            "categoria": "aaa",
+            "price": 1993010
+        },
+        {
+            "id": 11,
+            "name": "producto 11",
+            "categoria": "xxx",
+            "price": 1993011
+        },
+        {
+            "id": 12,
+            "name": "producto 12",
+            "categoria": "xxx",
+            "price": 1993012
+        },
+        {
+            "id": 13,
+            "name": "producto 13",
+            "categoria": "xxx",
+            "price": 1993013
+        },
+        {
+            "id": 14,
+            "name": "producto 14",
+            "categoria": "xxx",
+            "price": 1993014
+        },
+        {
+            "id": 15,
+            "name": "producto 15",
+            "categoria": "xxx",
+            "price": 1993015
+        },
+        {
+            "id": 16,
+            "name": "producto 16",
+            "categoria": "xxx",
+            "price": 1993016
+        },
+        {
+            "id": 17,
+            "name": "producto 17",
+            "categoria": "xxx",
+            "price": 1993017
+        },
+        {
+            "id": 18,
+            "name": "producto 18",
+            "categoria": "xxx",
+            "price": 1993018
+        },
+        {
+            "id": 19,
+            "name": "producto 19",
+            "categoria": "xxx",
+            "price": 1993019
+        },
+        {
+            "id": 20,
+            "name": "producto 20",
+            "categoria": "xxx",
+            "price": 1993020
+        },
+        {
+            "id": 21,
+            "name": "producto 21",
+            "categoria": "xxx",
+            "price": 1993021
+        },
+        {
+            "id": 22,
+            "name": "producto 22",
+            "categoria": "xxx",
+            "price": 1993022
+        },
+        {
+            "id": 23,
+            "name": "producto 23",
+            "categoria": "xxx",
+            "price": 1993023
+        },
+        {
+            "id": 24,
+            "name": "producto 24",
+            "categoria": "xxx",
+            "price": 1993024
+        },
+        {
+            "id": 25,
+            "name": "producto 25",
+            "categoria": "xxx",
+            "price": 1993025
+        },
+        {
+            "id": 26,
+            "name": "producto 26",
+            "categoria": "xxx",
+            "price": 1993026
+        },
+        {
+            "id": 27,
+            "name": "producto 27",
+            "categoria": "xxx",
+            "price": 1993027
+        },
+        {
+            "id": 28,
+            "name": "producto 28",
+            "categoria": "xxx",
+            "price": 1993028
+        },
+        {
+            "id": 29,
+            "name": "producto 29",
+            "categoria": "xxx",
+            "price": 1993029
+        },
+        {
+            "id": 30,
+            "name": "producto 30",
+            "categoria": "xxx",
+            "price": 1993030
+        },
+        {
+            "id": 31,
+            "name": "producto 31",
+            "categoria": "xxx",
+            "price": 1993031
+        },
+        {
+            "id": 32,
+            "name": "producto 32",
+            "categoria": "xxx",
+            "price": 1993032
+        },
+        {
+            "id": 33,
+            "name": "producto 33",
+            "categoria": "xxx",
+            "price": 1993033
+        },
+        {
+            "id": 34,
+            "name": "producto 34",
+            "categoria": "xxx",
+            "price": 1993034
+        },
+        {
+            "id": 35,
+            "name": "producto 35",
+            "categoria": "xxx",
+            "price": 1993035
+        },
+        {
+            "id": 36,
+            "name": "producto 36",
+            "categoria": "xxx",
+            "price": 1993036
+        },
+        {
+            "id": 37,
+            "name": "producto 37",
+            "categoria": "xxx",
+            "price": 1993037
+        },
+        {
+            "id": 38,
+            "name": "producto 38",
+            "categoria": "xxx",
+            "price": 1993038
+        },
+        {
+            "id": 39,
+            "name": "producto 39",
+            "categoria": "aaa",
+            "price": 1993039
+        },
+        {
+            "id": 40,
+            "name": "producto 40",
+            "categoria": "aaa",
+            "price": 1993040
+        },
+        {
+            "id": 41,
+            "name": "producto 41",
+            "categoria": "aaa",
+            "price": 1993041
+        },
+        {
+            "id": 42,
+            "name": "producto 42",
+            "categoria": "aaa",
+            "price": 1993042
+        },
+        {
+            "id": 43,
+            "name": "producto 43",
+            "categoria": "xxx",
+            "price": 1993043
+        },
+        {
+            "id": 44,
+            "name": "producto 44",
+            "categoria": "xxx",
+            "price": 1993044
+        },
+        {
+            "id": 45,
+            "name": "producto 45",
+            "categoria": "xxx",
+            "price": 1993045
+        },
+        {
+            "id": 46,
+            "name": "producto 46",
+            "categoria": "xxx",
+            "price": 1993046
+        },
+        {
+            "id": 47,
+            "name": "producto 47",
+            "categoria": "xxx",
+            "price": 1993047
+        },
+        {
+            "id": 48,
+            "name": "producto 48",
+            "categoria": "xxx",
+            "price": 1993048
+        },
+        {
+            "id": 49,
+            "name": "producto 49",
+            "categoria": "xxx",
+            "price": 1993049
+        },
+        {
+            "id": 50,
+            "name": "producto 50",
+            "categoria": "xxx",
+            "price": 1993050
+        },
+        {
+            "id": 51,
+            "name": "producto 51",
+            "categoria": "aaa",
+            "price": 1993051
+        },
+        {
+            "id": 52,
+            "name": "producto 52",
+            "categoria": "aaa",
+            "price": 1993052
+        },
+        {
+            "id": 53,
+            "name": "producto 53",
+            "categoria": "xxx",
+            "price": 1993053
+        },
+        {
+            "id": 54,
+            "name": "producto 54",
+            "categoria": "xxx",
+            "price": 1993054
+        },
+        {
+            "id": 55,
+            "name": "producto 55",
+            "categoria": "xxx",
+            "price": 1993055
+        },
+        {
+            "id": 56,
+            "name": "producto 56",
+            "categoria": "xxx",
+            "price": 1993056
+        },
+        {
+            "id": 57,
+            "name": "producto 57",
+            "categoria": "xxx",
+            "price": 1993057
+        },
+        {
+            "id": 58,
+            "name": "producto 58",
+            "categoria": "aaa",
+            "price": 1993058
+        },
+        {
+            "id": 59,
+            "name": "producto 59",
+            "categoria": "aaa",
+            "price": 1993059
+        },
+        {
+            "id": 60,
+            "name": "producto 60",
+            "categoria": "aaa",
+            "price": 1993060
+        },
+        {
+            "id": 61,
+            "name": "producto 61",
+            "categoria": "aaa",
+            "price": 1993061
+        },
+        {
+            "id": 62,
+            "name": "producto 62",
+            "categoria": "aaa",
+            "price": 1993062
+        },
+        {
+            "id": 63,
+            "name": "producto 63",
+            "categoria": "aaa",
+            "price": 1993063
+        },
+        {
+            "id": 64,
+            "name": "producto 64",
+            "categoria": "aaa",
+            "price": 1993064
+        },
+        {
+            "id": 65,
+            "name": "producto 65",
+            "categoria": "aaa",
+            "price": 1993065
+        },
+        {
+            "id": 66,
+            "name": "producto 66",
+            "categoria": "aaa",
+            "price": 1993066
+        },
+        {
+            "id": 67,
+            "name": "producto 67",
+            "categoria": "xxx",
+            "price": 1993067
+        },
+        {
+            "id": 68,
+            "name": "producto 68",
+            "categoria": "xxx",
+            "price": 1993068
+        },
+        {
+            "id": 69,
+            "name": "producto 69",
+            "categoria": "aaa",
+            "price": 1993069
+        },
+        {
+            "id": 70,
+            "name": "producto 70",
+            "categoria": "aaa",
+            "price": 1993070
+        },
+        {
+            "id": 71,
+            "name": "producto 71",
+            "categoria": "aaa",
+            "price": 1993071
+        },
+        {
+            "id": 72,
+            "name": "producto 72",
+            "categoria": "aaa",
+            "price": 1993072
+        },
+        {
+            "id": 73,
+            "name": "producto 73",
+            "categoria": "aaa",
+            "price": 1993073
+        },
+        {
+            "id": 74,
+            "name": "producto 74",
+            "categoria": "aaa",
+            "price": 1993074
+        },
+        {
+            "id": 75,
+            "name": "producto 75",
+            "categoria": "aaa",
+            "price": 1993075
+        },
+        {
+            "id": 76,
+            "name": "producto 76",
+            "categoria": "aaa",
+            "price": 1993076
+        },
+        {
+            "id": 77,
+            "name": "producto 77",
+            "categoria": "aaa",
+            "price": 1993077
+        },
+        {
+            "id": 78,
+            "name": "producto 78",
+            "categoria": "xxx",
+            "price": 1993078
+        },
+        {
+            "id": 79,
+            "name": "producto 79",
+            "categoria": "xxx",
+            "price": 1993079
+        },
+        {
+            "id": 80,
+            "name": "producto 80",
+            "categoria": "xxx",
+            "price": 1993080
+        },
+        {
+            "id": 81,
+            "name": "producto 81",
+            "categoria": "xxx",
+            "price": 1993081
+        },
+        {
+            "id": 82,
+            "name": "producto 82",
+            "categoria": "xxx",
+            "price": 1993082
+        },
+        {
+            "id": 83,
+            "name": "producto 83",
+            "categoria": "xxx",
+            "price": 1993083
+        },
+        {
+            "id": 84,
+            "name": "producto 84",
+            "categoria": "aaa",
+            "price": 1993084
+        },
+        {
+            "id": 85,
+            "name": "producto 85",
+            "categoria": "aaa",
+            "price": 1993085
+        },
+        {
+            "id": 86,
+            "name": "producto 86",
+            "categoria": "aaa",
+            "price": 1993086
+        },
+        {
+            "id": 87,
+            "name": "producto 87",
+            "categoria": "aaa",
+            "price": 1993087
+        },
+        {
+            "id": 88,
+            "name": "producto 88",
+            "categoria": "xxx",
+            "price": 1993088
+        },
+        {
+            "id": 89,
+            "name": "producto 89",
+            "categoria": "xxx",
+            "price": 1993089
+        },
+        {
+            "id": 90,
+            "name": "producto 90",
+            "categoria": "xxx",
+            "price": 1993090
+        },
+        {
+            "id": 91,
+            "name": "producto 91",
+            "categoria": "aaa",
+            "price": 1993091
+        },
+        {
+            "id": 92,
+            "name": "producto 92",
+            "categoria": "aaa",
+            "price": 1993092
+        },
+        {
+            "id": 93,
+            "name": "producto 93",
+            "categoria": "aaa",
+            "price": 1993093
+        },
+        {
+            "id": 94,
+            "name": "producto 94",
+            "categoria": "aaa",
+            "price": 1993094
+        },
+        {
+            "id": 95,
+            "name": "producto 95",
+            "categoria": "aaa",
+            "price": 1993095
+        },
+        {
+            "id": 96,
+            "name": "producto 96",
+            "categoria": "aaa",
+            "price": 1993096
+        },
+        {
+            "id": 97,
+            "name": "producto 97",
+            "categoria": "aaa",
+            "price": 1993097
+        },
+        {
+            "id": 98,
+            "name": "producto 98",
+            "categoria": "aaa",
+            "price": 1993098
+        },
+        {
+            "id": 99,
+            "name": "producto 99",
+            "categoria": "xxx",
+            "price": 1993099
+        },
+        {
+            "id": 100,
+            "name": "producto 100",
+            "categoria": "xxx",
+            "price": 1993099
+        }
+    ]
+}
