@@ -9,7 +9,8 @@ const colors = ['#333333', '#F2994A', '#EB5757', '#27AE60', '#2F80ED', '#56CCF2'
 
 const SideMenu = ({ filters, updateFilter }) => {
   const handleClick = e => {
-    console.log('click ', e);
+    updateFilter({ [e.keyPath[1]]: e.keyPath[0]})
+
   };
   return (
     <div className={styles.sideMenu}>
@@ -22,15 +23,15 @@ const SideMenu = ({ filters, updateFilter }) => {
         mode="inline"
       >
         <SubMenu
-          key="Categorías"
+          key="category"
           title={
             <span>
               <span>Categorías</span>
             </span>
           }
         >
-          <Menu.Item key="c1">Option 1</Menu.Item>
-          <Menu.Item key="c2">Option 2</Menu.Item>
+          <Menu.Item key="aaa">aaa</Menu.Item>
+          <Menu.Item key="xxx">xxx</Menu.Item>
         </SubMenu>
         <SubMenu
           key="Fashion"
@@ -81,14 +82,14 @@ const SideMenu = ({ filters, updateFilter }) => {
               <div
                 key={color}
                 role="button"
-                onClick={()=> updateFilter({colors: color})}
+                onClick={() => updateFilter({ colors: color })}
                 style={{
                   backgroundColor: color,
                   width: '20px',
                   height: '20px',
                   marginRight: '10px'
                 }}
-                className={filters.colors === color ? styles.colorActive: ''}
+                className={filters.colors === color ? styles.colorActive : ''}
               />))}
           </div>
         </Menu.Item>

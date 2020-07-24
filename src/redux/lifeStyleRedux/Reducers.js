@@ -11,7 +11,7 @@ export const INITIAL_STATE_LIFESTYLES = {
     collectibles: '',
     colors: '',
     minPrice: 0,
-    maxPrice: 5000000,
+    maxPrice: 0,
     sortBy: {
       value: 'newer',
       label: 'Más Nuevo'
@@ -21,7 +21,9 @@ export const INITIAL_STATE_LIFESTYLES = {
   pagination: {
     page: 1
   },
-  products: []
+  products: [],
+  loadingProducts: true,
+  productsError: ""
 }
 
 export const updateFilters = (state, action) => {
@@ -29,6 +31,27 @@ export const updateFilters = (state, action) => {
   return { ...state, filters: newFilters }
 }
 
+const productsRequest = state => ({ ...state, loadingProducts: true })
+
+const productsSuccess = (state, { payload }) => {
+  return {
+    ...state,
+    products: payload,
+    loadingProducts: false
+  }
+}
+
+const productsFailure = (state, { payload }) => {
+  return {
+    ...state,
+    productsError: payload,
+    products: []
+  }
+}
+
 export const lifeStylesReducer = createReducer(INITIAL_STATE_LIFESTYLES, {
-  [LifestyleTypes.updateFilters.type]: updateFilters
+  [LifestyleTypes.updateFilters.type]: updateFilters,
+  [LifestyleTypes.productsRequest]: productsRequest,
+  [LifestyleTypes.productsSuccess]: productsSuccess,
+  [LifestyleTypes.productsFailure]: productsFailure
 })

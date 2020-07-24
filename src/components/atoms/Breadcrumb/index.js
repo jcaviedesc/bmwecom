@@ -8,7 +8,7 @@ import Routes from '../../../routes'
 export const Breadcrumb = () => {
   let location = useLocation();
   return (
-    <BreadcrumbComponent>
+    <BreadcrumbComponent className="breadcrumb">
       <BreadcrumbComponent.Item>Home</BreadcrumbComponent.Item>
       {location && location.pathname !== undefined && (
         <BreadcrumbComponent.Item>

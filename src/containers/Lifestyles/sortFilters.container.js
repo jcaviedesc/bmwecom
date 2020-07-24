@@ -3,16 +3,17 @@ import { connect } from 'react-redux'
 import { SortFiltersLifeStyles } from '../../components'
 import LifestyleActions from '../../redux/lifeStyleRedux'
 
-const Filters = ({ filters, updateFilters }) => {
+const Filters = ({ productsQuantity, orderBy, updateFilters }) => {
   return <SortFiltersLifeStyles
-    quantity={24}
-    activeFilter={filters.sortBy.value}
-    onChange={itemSelected => updateFilters({sortBy:itemSelected})} />
+    quantity={productsQuantity}
+    activeFilter={orderBy}
+    onChange={itemSelected => updateFilters({ sortBy: itemSelected })} />
 }
 
 const mapStateToProps = ({ lifestyle }) => {
   return {
-    filters: lifestyle.filters
+    productsQuantity: lifestyle.products.length,
+    orderBy: lifestyle.filters.sortBy.value
   }
 }
 

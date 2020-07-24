@@ -10,5 +10,6 @@ export const api = Api.init()
 export default function* root() {
   yield all([
     takeLatest(LifestyleTypes.productsRequest.type, getProductsSagas, api),
+    takeLatest(LifestyleTypes.updateFilters.type, getProductsSagas,api) 
   ])
 }
