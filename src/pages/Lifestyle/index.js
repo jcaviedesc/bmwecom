@@ -1,6 +1,7 @@
 import React from 'react'
 import LifeStyleFiltersContainer from '../../containers/Lifestyles/filters.container'
 import SortFiltersLifeStyles from  '../../containers/Lifestyles/sortFilters.container'
+import ProductsContainer from '../../containers/Lifestyles/products.container'
 import styles from './styles.module.css'
 
 const LifeStylePage = () => {
@@ -9,9 +10,7 @@ const LifeStylePage = () => {
       <LifeStyleFiltersContainer />
       <div className={styles.lifestyleBody}>
         <SortFiltersLifeStyles />
-        {[1,2,3].map(item => (
-          <div><label>item</label></div>
-        ))}
+        <ProductsContainer />
       </div>
     </div>
   )

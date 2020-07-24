@@ -1,2 +1,4 @@
-import * as Actions from './ActionsCreators'
+import Actions from './ActionsCreators'
+
+export * from './selectors'
 export default Actions

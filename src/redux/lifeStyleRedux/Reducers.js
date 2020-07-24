@@ -1,6 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit'
 
-import Actions from './ActionsCreators'
+import LifestyleTypes from './ActionsCreators'
 
 export const INITIAL_STATE_LIFESTYLES = {
   filters: {
@@ -15,7 +15,8 @@ export const INITIAL_STATE_LIFESTYLES = {
     sortBy: {
       value: 'newer',
       label: 'Más Nuevo'
-    }
+    },
+    page: 1
   },
   pagination: {
     page: 1
@@ -28,6 +29,6 @@ export const updateFilters = (state, action) => {
   return { ...state, filters: newFilters }
 }
 
-export const lifeStylesReducer = createReducer(INITIAL_STATE_LIFESTYLES,{
-  [Actions.updateFilters.type]: updateFilters
+export const lifeStylesReducer = createReducer(INITIAL_STATE_LIFESTYLES, {
+  [LifestyleTypes.updateFilters.type]: updateFilters
 })

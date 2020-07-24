@@ -1,9 +1,20 @@
+import { createAction } from '@reduxjs/toolkit'
 
-export const updateFilters = filters => ({
+const updateFilters = filters => ({
   type: 'lifestyle/updateFilters',
   filters
 })
+updateFilters.type = 'lifestyle/updateFilters'
+
+const productsRequest = createAction('lifestyle/productRequest')
+
+const productsSuccess = createAction('lifestyle/productSuccess')
+
+const productsFailure = createAction('lifestyle/productFailure')
 
 export default {
-  updateFilters: updateFilters()
+  updateFilters,
+  productsRequest,
+  productsSuccess,
+  productsFailure
 }

@@ -1,20 +1,18 @@
 import axios from 'axios'
 
-const createApi = () => {
+const init = () => {
   const requestApi = axios.create({
     baseURL: 'http://localhost:3000',
     timeout: 30000,
     headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": '*',
-      Accept: 'application/json'
+      "Access-Control-Allow-Origin": '*'
     }
   })
 
-  const getProducts = filters => requestApi.get('/products', filters)
+  const getProducts = filters => requestApi.get('/products', {params:filters})
   return {
     getProducts
   }
 }
 
-export default createApi
+export default { init }

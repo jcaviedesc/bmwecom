@@ -30,7 +30,7 @@ const SortFiltersLifeStyles = ({ quantity, activeFilter, onChange }) => {
           }
         >
           {Object.entries(optionsValues).map(([value, label]) => (
-            <Option value={value}>{label}</Option>
+            <Option key={value} value={value}>{label}</Option>
           ))}
         </Select>
       </div>
