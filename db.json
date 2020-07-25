@@ -167,18 +167,6 @@
             "name": "producto 28",
             "category": "xxx",
             "price": 1993028
-        },
-        {
-            "id": 29,
-            "name": "producto 29",
-            "category": "xxx",
-            "price": 1993029
-        },
-        {
-            "id": 30,
-            "name": "producto 30",
-            "category": "xxx",
-            "price": 1993030
         }
     ]
 }
