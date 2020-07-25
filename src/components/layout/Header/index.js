@@ -37,7 +37,7 @@ const righcontent = (productCart) => {
     </div>
   )
 }
-const TabsLayout = ({ tabs, productCart }) => {
+const TabsLayout = ({ tabs, productCart, openHamburgerMenu }) => {
   let history = useHistory();
   return (
     <div>
@@ -56,7 +56,7 @@ const TabsLayout = ({ tabs, productCart }) => {
         </Tabs>
       </div>
       <div className={styles.responsiveMobile}>
-        <Button type="text"><HamburgerMenuIcon /></Button>
+        <Button type="text" onClick={openHamburgerMenu}><HamburgerMenuIcon /></Button>
         {righcontent(productCart)}
       </div>
     </div>

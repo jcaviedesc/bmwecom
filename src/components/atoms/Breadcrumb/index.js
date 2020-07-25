@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Routes from '../../../routes'
 
-export const Breadcrumb = () => {
+const Breadcrumb = () => {
   let location = useLocation();
   return (
     <BreadcrumbComponent className="breadcrumb">
@@ -18,3 +18,5 @@ export const Breadcrumb = () => {
     </BreadcrumbComponent>
   )
 }
+
+export default Breadcrumb

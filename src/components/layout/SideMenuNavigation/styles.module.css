@@ -1,0 +1,25 @@
+.sideMenuMobile {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white-color);
+}
+.contentButton{
+  display: flex;
+  justify-content: center;
+}
+.contentButton span{
+  margin-left: 3px;
+}
+.sideMenuMobile button{
+  height: 56px;
+}
+.sideMenuMobile button svg path{
+  fill: var(--white-color);
+}

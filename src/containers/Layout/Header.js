@@ -1,9 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { TabsLayout } from '../../components'
+import AppActions from '../../redux/appRedux'
 
-const Header = ({tabsConfig, currentProductAdded}) => {
-  return (<TabsLayout tabs={tabsConfig} productCart={currentProductAdded}/>)
+const Header = ({ tabsConfig, currentProductAdded, openMenu }) => {
+  return (
+    <TabsLayout
+      tabs={tabsConfig}
+      productCart={currentProductAdded}
+      openHamburgerMenu={openMenu}
+    />)
 }
 
 const mapStateToProps = ({ cart }) => {
@@ -13,7 +19,9 @@ const mapStateToProps = ({ cart }) => {
 }
 
 const mapDispatchToProps = dispatch => {
-  return {}
+  return {
+    openMenu: () => dispatch(AppActions.openMenu(true))
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)

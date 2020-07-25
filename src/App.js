@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import 'antd/dist/antd.css';
 import {
   BrowserRouter as Router,
@@ -7,23 +7,38 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import { Breadcrumb } from './components'
 import Header from './containers/Layout/Header'
+import SideMenuMobile from './containers/Layout/SideMenuMobile'
 import Routes, { tabsConfig } from './routes'
 
+const BreadcrumbComponent = React.lazy(() => import('./components/atoms/Breadcrumb'))
+
 function App() {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const screenWidth = window.screen.width
+    if (screenWidth <= 768) {
+      setIsMobile(true)
+    }
+  }, [isMobile])
+
   return (
-    <div className="App">
-      <Router basename="/">
-        <Header tabsConfig={tabsConfig} />
-        <Breadcrumb />
-        <Switch>
-          {Object.entries(Routes).map(([path, options], i) => (
-            <Route key={`r-${path}-${i}`} path={path} component={options.component} />
-          ))}
-        </Switch>
-      </Router>
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className="App">
+        <Router basename="/">
+          {isMobile && (<SideMenuMobile />)}
+          <Header tabsConfig={tabsConfig} />
+          {!isMobile
+            ? (<BreadcrumbComponent />)
+            : null}
+          <Switch>
+            {Object.entries(Routes).map(([path, options], i) => (
+              <Route key={`r-${path}-${i}`} path={path} component={options.component} />
+            ))}
+          </Switch>
+        </Router>
+      </div>
+    </Suspense>
   );
 }
 
