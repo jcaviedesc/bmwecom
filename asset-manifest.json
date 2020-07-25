@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bmwecom/static/css/main.7c7489a5.chunk.css",
-    "main.js": "/bmwecom/static/js/main.00200b34.chunk.js",
-    "main.js.map": "/bmwecom/static/js/main.00200b34.chunk.js.map",
+    "main.css": "/bmwecom/static/css/main.2b65a3f6.chunk.css",
+    "main.js": "/bmwecom/static/js/main.78e09154.chunk.js",
+    "main.js.map": "/bmwecom/static/js/main.78e09154.chunk.js.map",
     "runtime-main.js": "/bmwecom/static/js/runtime-main.edc6b36b.js",
     "runtime-main.js.map": "/bmwecom/static/js/runtime-main.edc6b36b.js.map",
     "static/css/2.fc5a9450.chunk.css": "/bmwecom/static/css/2.fc5a9450.chunk.css",
-    "static/js/2.007dbeba.chunk.js": "/bmwecom/static/js/2.007dbeba.chunk.js",
-    "static/js/2.007dbeba.chunk.js.map": "/bmwecom/static/js/2.007dbeba.chunk.js.map",
+    "static/js/2.8ba9de62.chunk.js": "/bmwecom/static/js/2.8ba9de62.chunk.js",
+    "static/js/2.8ba9de62.chunk.js.map": "/bmwecom/static/js/2.8ba9de62.chunk.js.map",
     "index.html": "/bmwecom/index.html",
-    "precache-manifest.55ae8790e0aa7339d0fca8a6e2521787.js": "/bmwecom/precache-manifest.55ae8790e0aa7339d0fca8a6e2521787.js",
+    "precache-manifest.034e2c98970fd447549867b475802680.js": "/bmwecom/precache-manifest.034e2c98970fd447549867b475802680.js",
     "service-worker.js": "/bmwecom/service-worker.js",
     "static/css/2.fc5a9450.chunk.css.map": "/bmwecom/static/css/2.fc5a9450.chunk.css.map",
-    "static/css/main.7c7489a5.chunk.css.map": "/bmwecom/static/css/main.7c7489a5.chunk.css.map",
-    "static/js/2.007dbeba.chunk.js.LICENSE.txt": "/bmwecom/static/js/2.007dbeba.chunk.js.LICENSE.txt",
+    "static/css/main.2b65a3f6.chunk.css.map": "/bmwecom/static/css/main.2b65a3f6.chunk.css.map",
+    "static/js/2.8ba9de62.chunk.js.LICENSE.txt": "/bmwecom/static/js/2.8ba9de62.chunk.js.LICENSE.txt",
     "static/media/cart.3a67111c.svg": "/bmwecom/static/media/cart.3a67111c.svg",
     "static/media/check.295bc3dd.svg": "/bmwecom/static/media/check.295bc3dd.svg",
     "static/media/search.a4902a79.svg": "/bmwecom/static/media/search.a4902a79.svg",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.edc6b36b.js",
     "static/css/2.fc5a9450.chunk.css",
-    "static/js/2.007dbeba.chunk.js",
-    "static/css/main.7c7489a5.chunk.css",
-    "static/js/main.00200b34.chunk.js"
+    "static/js/2.8ba9de62.chunk.js",
+    "static/css/main.2b65a3f6.chunk.css",
+    "static/js/main.78e09154.chunk.js"
   ]
 }
