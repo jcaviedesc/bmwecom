@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const init = () => {
   const requestApi = axios.create({
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://my-json-server.typicode.com/jcaviedesc/bmwecom',
     timeout: 30000,
     headers: {
       "Access-Control-Allow-Origin": '*'

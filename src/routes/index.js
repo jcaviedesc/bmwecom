@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect } from "react-router-dom";
 import LifeStylePage from '../pages/Lifestyle'
 
 const DevelopPage = () => <div><h1>in development</h1></div>
@@ -35,8 +36,8 @@ export default {
     component: DevelopPage,
     breadcrumbName: 'Novedades'
   },
-  '/':{
-    component: DevelopPage,
+  '/': {
+    component: () => <Redirect to="/lifestyle" />,
     breadcrumbName: 'Accesorios para carros'
   }
 }

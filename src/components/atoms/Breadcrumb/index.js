@@ -7,12 +7,15 @@ import Routes from '../../../routes'
 
 const Breadcrumb = () => {
   let location = useLocation();
+  const currentRoute = Routes.hasOwnProperty(location.pathname)
+    ? Routes[location.pathname].breadcrumbName
+    : ""
   return (
     <BreadcrumbComponent className="breadcrumb">
       <BreadcrumbComponent.Item>Home</BreadcrumbComponent.Item>
       {location && location.pathname !== undefined && (
         <BreadcrumbComponent.Item>
-          {Routes[location.pathname].breadcrumbName}
+          {currentRoute}
         </BreadcrumbComponent.Item>
       )}
     </BreadcrumbComponent>
