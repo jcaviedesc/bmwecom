@@ -7,14 +7,15 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import { TabsLayout, Breadcrumb } from './components'
+import { Breadcrumb } from './components'
+import Header from './containers/Layout/Header'
 import Routes, { tabsConfig } from './routes'
 
 function App() {
   return (
     <div className="App">
       <Router basename="/">
-        <TabsLayout tabs={tabsConfig} />
+        <Header tabsConfig={tabsConfig} />
         <Breadcrumb />
         <Switch>
           {Object.entries(Routes).map(([path, options], i) => (

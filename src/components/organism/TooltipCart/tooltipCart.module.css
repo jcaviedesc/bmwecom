@@ -1,0 +1,98 @@
+.tooltipCart {
+  position: fixed;
+  width: 252px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  counter-increment: cont;
+  transition: .4s;
+  transform-origin: center bottom;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
+.tooltipCart::before {
+  background: inherit;
+  background-clip: content-box;
+  z-index: 1;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 7vmin;
+  height: 7vmin;
+  transform: translate(-50%, -50%) rotate(45deg);
+  clip-path: polygon(-10% -10%, 102% 0%, 0% 102%);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 3vmin 0 0 0;
+}
+
+.tooltipCart .content {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.closeContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.name {
+  color: var(--black-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.reference {
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--gray-color);
+  margin: 6px 0px 0px 0px;
+}
+.refenceCode{
+  color: var(--black-color);
+  margin-bottom: 6px;
+}
+.tooltipCart .content .imageContainer {
+  width: 80px;
+  height: 80px;
+}
+
+.tooltipCart .content .imageContainer img {
+  height: 100%;
+}
+
+.tooltipCart .content .buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.cartButton{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.cartButton span{
+  margin-left: 1em;
+}
+.tooltipCart .content .buttons button:first-child {
+  margin-bottom: 8px;
+}
+
+.tooltipCart .content .bottom {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltipCart .content .bottom span {
+  margin-left: 6px;
+}
