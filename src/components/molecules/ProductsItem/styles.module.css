@@ -61,3 +61,18 @@
   line-height: 16px;
   color: var(--black-color);
 }
+
+@media only screen and (max-width: 768px) {
+  .productItem {
+    width: 50%;
+    padding: 6px;
+    margin: 0px;
+  }
+  .productItem .productImage{
+    padding: 0px;
+    height: 150px;
+  }
+  .productItem .productImage img{
+    width: 100%;
+  }
+}

@@ -10,3 +10,8 @@
 .colorsContainer .colorActive{
   border: 1px black solid;
 }
+@media only screen and (max-width: 768px) {
+  .sideMenu {
+    display: none;
+  }
+}

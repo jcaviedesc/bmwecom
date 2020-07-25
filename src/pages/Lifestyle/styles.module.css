@@ -1,6 +1,13 @@
-.lifestyle{
-    display: flex;
+.lifestyle {
+  display: flex;
 }
-.lifestyle .lifestyleBody{
-    margin: 20px 36px;
+
+.lifestyle .lifestyleBody {
+  margin: 20px 36px;
+}
+
+@media only screen and (max-width: 768px) {
+  .lifestyleBody {
+    margin: 0px !important;
+  }
 }

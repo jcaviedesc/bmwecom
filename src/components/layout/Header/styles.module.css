@@ -18,3 +18,22 @@
   margin: 0 45px;
   position: relative;
 }
+
+.responsiveMobile {
+  display: none;
+  padding: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .responsiveLaptop {
+    display: none;
+  }
+  .rightTabs {
+    margin-right: 10px;
+  }
+  .responsiveMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

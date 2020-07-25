@@ -1,8 +1,8 @@
 import React from 'react'
 import Proptypes from 'prop-types'
 import { useHistory } from "react-router-dom";
-import { Tabs } from 'antd';
-import { UserIcon, CartIcon, SearchIcon } from '../../../icons'
+import { Tabs, Button } from 'antd';
+import { UserIcon, CartIcon, SearchIcon, HamburgerMenuIcon } from '../../../icons'
 import { TooltipCart } from '../../organism/TooltipCart'
 import styles from './styles.module.css'
 
@@ -16,13 +16,12 @@ const righcontent = (productCart) => {
   const thereIsProduct = Object.keys(productCart).length > 0
   return (
     <div className={styles.rightTabs}>
-      <div className={styles.icon}>
+      <div className={`${styles.icon} ${styles.responsiveLaptop}`}>
         <UserIcon />
       </div>
       <div className={`${styles.icon} ${styles.carIcon}`}>
-        <CartIcon />
+        <CartIcon  />
         {thereIsProduct && (
-
           <div className={styles.tooltipContent}>
             <TooltipCart
               image={productCart.productImage}
@@ -42,18 +41,24 @@ const TabsLayout = ({ tabs, productCart }) => {
   let history = useHistory();
   return (
     <div>
-      <Tabs
-        defaultActiveKey="/lifestyle"
-        onChange={(key) => callback(key, history)}
-        tabBarExtraContent={righcontent(productCart)}
-        tabBarStyle={{ paddingLeft: 40 }}>
-        {Object.entries(tabs)
-          .map(([name, props]) => {
-            return (
-              <TabPane tab={name} key={props.ref} />
-            )
-          })}
-      </Tabs>
+      <div className={styles.responsiveLaptop}>
+        <Tabs
+          defaultActiveKey="/lifestyle"
+          onChange={(key) => callback(key, history)}
+          tabBarExtraContent={righcontent(productCart)}
+          tabBarStyle={{ paddingLeft: 40 }}>
+          {Object.entries(tabs)
+            .map(([name, props]) => {
+              return (
+                <TabPane tab={name} key={props.ref} />
+              )
+            })}
+        </Tabs>
+      </div>
+      <div className={styles.responsiveMobile}>
+        <Button type="text"><HamburgerMenuIcon /></Button>
+        {righcontent(productCart)}
+      </div>
     </div>
   )
 };
