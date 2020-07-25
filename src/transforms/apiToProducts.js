@@ -12,11 +12,13 @@ const images = [
   'https://firebasestorage.googleapis.com/v0/b/amissa-3497d.appspot.com/o/termo.png?alt=media&token=647d6e3e-26b0-4933-a512-fbb883aaff15'
 ]
 export const ApiToProducts = productsApi => {
+  const productsApiCopy = [...productsApi]
   const productMapper = product => {
-    const productCopy = product
-    productCopy.price = numberToCurrency(productCopy.price)
-    productCopy.productImage = images[getRandomInt(5)]
-        return productCopy;
+    return {
+      ...product,
+      price: numberToCurrency(product.price),
+      productImage: images[getRandomInt(5)]
+    }
   }
-  return productsApi.map(productMapper);
+  return productsApiCopy.map(productMapper);
 }

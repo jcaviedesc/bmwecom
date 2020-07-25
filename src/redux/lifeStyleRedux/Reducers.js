@@ -45,7 +45,7 @@ const productsFailure = (state, { payload }) => {
   return {
     ...state,
     productsError: payload,
-    products: []
+    products: state.products
   }
 }
 

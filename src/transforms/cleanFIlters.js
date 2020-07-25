@@ -10,6 +10,6 @@ export const lifestyleFiltersToApi = activeFilters => {
     .value()
     cleanedFilters._page = cleanedFilters.page
     delete cleanedFilters.page
-    cleanedFilters._limit=12
+    cleanedFilters._limit=9
   return cleanedFilters;
 }

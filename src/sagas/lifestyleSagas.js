@@ -13,16 +13,18 @@ export function* getProductsSagas(api) {
     const response = yield call(api.getProducts, cleanFilters)
     let products = []
 
-    if (response.status < 300) {
+    if (response.data.length > 0 && response.status < 300) {
       if (filters.page > 1) {
         products = yield select(selectProducts)
       }
       const productsFinal = products.concat(response.data)
+      console.log("productssSagas", productsFinal)
       yield put(lifeStylesActions.productsSuccess(ApiToProducts(productsFinal)))
     } else {
       yield put(lifeStylesActions.productsFailure())
     }
   } catch (error) {
+    console.log(error)
     //TODO tracking error 
     yield put(lifeStylesActions.productsFailure("upss tenemos algunos problemas"))
   }
